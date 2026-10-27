@@ -1,0 +1,242 @@
+{
+  "소방시설 설치 및 관리에 관한 법률": {
+    "dir": "fire_facility_act",
+    "as_of": "2024-12-01",
+    "source_url": "https://www.law.go.kr/법령/소방시설설치및관리에관한법률",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=236977&type=XML"
+  },
+  "소방시설 설치 및 관리에 관한 법률 시행령": {
+    "dir": "fire_facility_decree",
+    "as_of": "2026-10-02",
+    "source_url": "https://www.law.go.kr/법령/소방시설설치및관리에관한법률시행령",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=290451&type=XML"
+  },
+  "소방시설 설치 및 관리에 관한 법률 시행규칙": {
+    "dir": "fire_facility_rule",
+    "as_of": "2026-10-19",
+    "source_url": "https://www.law.go.kr/법령/소방시설설치및관리에관한법률시행규칙",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=291409&type=XML"
+  },
+  "화재의 예방 및 안전관리에 관한 법률": {
+    "dir": "fire_prevention_act",
+    "as_of": "2026-02-27",
+    "source_url": "https://www.law.go.kr/법령/화재의예방및안전관리에관한법률",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=283705&type=XML"
+  },
+  "화재의 예방 및 안전관리에 관한 법률 시행령": {
+    "dir": "fire_prevention_decree",
+    "as_of": "2026-07-01",
+    "source_url": "https://www.law.go.kr/법령/화재의예방및안전관리에관한법률시행령",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=287389&type=XML"
+  },
+  "화재의 예방 및 안전관리에 관한 법률 시행규칙": {
+    "dir": "fire_prevention_rule",
+    "as_of": "2026-07-01",
+    "source_url": "https://www.law.go.kr/법령/화재의예방및안전관리에관한법률시행규칙",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=287849&type=XML"
+  },
+  "소방시설공사업법": {
+    "dir": "construction_act",
+    "as_of": "2025-01-31",
+    "source_url": "https://www.law.go.kr/법령/소방시설공사업법",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=259473&type=XML"
+  },
+  "소방시설공사업법 시행령": {
+    "dir": "construction_decree",
+    "as_of": "2026-07-01",
+    "source_url": "https://www.law.go.kr/법령/소방시설공사업법시행령",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=287253&type=XML"
+  },
+  "다중이용업소의 안전관리에 관한 특별법": {
+    "dir": "multiuse_act",
+    "as_of": "2024-01-04",
+    "source_url": "https://www.law.go.kr/법령/다중이용업소의안전관리에관한특별법",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=247231&type=XML"
+  },
+  "다중이용업소의 안전관리에 관한 특별법 시행령": {
+    "dir": "multiuse_decree",
+    "as_of": "2026-07-01",
+    "source_url": "https://www.law.go.kr/법령/다중이용업소의안전관리에관한특별법시행령",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=287233&type=XML"
+  },
+  "다중이용업소의 안전관리에 관한 특별법 시행규칙": {
+    "dir": "multiuse_rule",
+    "as_of": "2026-07-01",
+    "source_url": "https://www.law.go.kr/법령/다중이용업소의안전관리에관한특별법시행규칙",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=287773&type=XML"
+  },
+  "건축물의 피난ㆍ방화구조 등의 기준에 관한 규칙": {
+    "dir": "building_evac_rule",
+    "as_of": "2026-10-06",
+    "source_url": "https://www.law.go.kr/법령/건축물의피난ㆍ방화구조등의기준에관한규칙",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=291033&type=XML"
+  },
+  "소화기구 및 자동소화장치의 화재안전성능기준(NFPC 101)": {
+    "dir": "nfpc_101",
+    "as_of": "2022-12-01",
+    "source_url": "https://www.law.go.kr/행정규칙/소화기구및자동소화장치의화재안전성능기준(NFPC101)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000216118&type=XML"
+  },
+  "소화기구 및 자동소화장치의 화재안전기술기준(NFTC 101)": {
+    "dir": "nftc_101",
+    "as_of": "2024-07-25",
+    "source_url": "https://www.law.go.kr/행정규칙/소화기구및자동소화장치의화재안전기술기준(NFTC101)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000244810&type=XML"
+  },
+  "옥내소화전설비의 화재안전성능기준(NFPC 102)": {
+    "dir": "nfpc_102",
+    "as_of": "2026-03-01",
+    "source_url": "https://www.law.go.kr/행정규칙/옥내소화전설비의화재안전성능기준(NFPC102)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000273564&type=XML"
+  },
+  "옥내소화전설비의 화재안전기술기준(NFTC 102)": {
+    "dir": "nftc_102",
+    "as_of": "2026-07-01",
+    "source_url": "https://www.law.go.kr/행정규칙/옥내소화전설비의화재안전기술기준(NFTC102)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000281772&type=XML"
+  },
+  "스프링클러설비의 화재안전성능기준(NFPC 103)": {
+    "dir": "nfpc_103",
+    "as_of": "2026-03-01",
+    "source_url": "https://www.law.go.kr/행정규칙/스프링클러설비의화재안전성능기준(NFPC103)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000270474&type=XML"
+  },
+  "스프링클러설비의 화재안전기술기준(NFTC 103)": {
+    "dir": "nftc_103",
+    "as_of": "2026-07-01",
+    "source_url": "https://www.law.go.kr/행정규칙/스프링클러설비의화재안전기술기준(NFTC103)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000281674&type=XML"
+  },
+  "비상경보설비 및 단독경보형감지기의 화재안전성능기준(NFPC 201)": {
+    "dir": "nfpc_201",
+    "as_of": "2026-05-04",
+    "source_url": "https://www.law.go.kr/행정규칙/비상경보설비및단독경보형감지기의화재안전성능기준(NFPC201)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000278574&type=XML"
+  },
+  "비상경보설비 및 단독경보형감지기의 화재안전기술기준(NFTC 201)": {
+    "dir": "nftc_201",
+    "as_of": "2022-12-01",
+    "source_url": "https://www.law.go.kr/행정규칙/비상경보설비및단독경보형감지기의화재안전기술기준(NFTC201)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000216259&type=XML"
+  },
+  "비상방송설비의 화재안전성능기준(NFPC202)": {
+    "dir": "nfpc_202",
+    "as_of": "2023-02-10",
+    "source_url": "https://www.law.go.kr/행정규칙/비상방송설비의화재안전성능기준(NFPC202)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000219011&type=XML"
+  },
+  "비상방송설비의 화재안전기술기준(NFTC 202)": {
+    "dir": "nftc_202",
+    "as_of": "2023-02-10",
+    "source_url": "https://www.law.go.kr/행정규칙/비상방송설비의화재안전기술기준(NFTC202)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000219020&type=XML"
+  },
+  "자동화재탐지설비 및 시각경보장치의 화재안전성능기준(NFPC 203)": {
+    "dir": "nfpc_203",
+    "as_of": "2026-03-01",
+    "source_url": "https://www.law.go.kr/행정규칙/자동화재탐지설비및시각경보장치의화재안전성능기준(NFPC203)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000269850&type=XML"
+  },
+  "자동화재탐지설비 및 시각경보장치의 화재안전기술기준(NFTC 203)": {
+    "dir": "nftc_203",
+    "as_of": "2026-03-01",
+    "source_url": "https://www.law.go.kr/행정규칙/자동화재탐지설비및시각경보장치의화재안전기술기준(NFTC203)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000275086&type=XML"
+  },
+  "피난기구의 화재안전성능기준(NFPC 301)": {
+    "dir": "nfpc_301",
+    "as_of": "2026-03-01",
+    "source_url": "https://www.law.go.kr/행정규칙/피난기구의화재안전성능기준(NFPC301)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000269698&type=XML"
+  },
+  "피난기구의 화재안전기술기준(NFTC 301)": {
+    "dir": "nftc_301",
+    "as_of": "2026-03-01",
+    "source_url": "https://www.law.go.kr/행정규칙/피난기구의화재안전기술기준(NFTC301)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000275090&type=XML"
+  },
+  "유도등 및 유도표지의 화재안전성능기준(NFPC 303)": {
+    "dir": "nfpc_303",
+    "as_of": "2024-01-01",
+    "source_url": "https://www.law.go.kr/행정규칙/유도등및유도표지의화재안전성능기준(NFPC303)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000230278&type=XML"
+  },
+  "유도등 및 유도표지의 화재안전기술기준(NFTC 303)": {
+    "dir": "nftc_303",
+    "as_of": "2024-07-01",
+    "source_url": "https://www.law.go.kr/행정규칙/유도등및유도표지의화재안전기술기준(NFTC303)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000243378&type=XML"
+  },
+  "비상조명등의 화재안전성능기준(NFPC 304)": {
+    "dir": "nfpc_304",
+    "as_of": "2026-05-04",
+    "source_url": "https://www.law.go.kr/행정규칙/비상조명등의화재안전성능기준(NFPC304)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000278586&type=XML"
+  },
+  "비상조명등의 화재안전기술기준(NFTC 304)": {
+    "dir": "nftc_304",
+    "as_of": "2022-12-01",
+    "source_url": "https://www.law.go.kr/행정규칙/비상조명등의화재안전기술기준(NFTC304)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000216268&type=XML"
+  },
+  "제연설비의 화재안전성능기준(NFPC 501)": {
+    "dir": "nfpc_501",
+    "as_of": "2024-10-01",
+    "source_url": "https://www.law.go.kr/행정규칙/제연설비의화재안전성능기준(NFPC501)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000246734&type=XML"
+  },
+  "제연설비의 화재안전기술기준(NFTC 501)": {
+    "dir": "nftc_501",
+    "as_of": "2024-10-01",
+    "source_url": "https://www.law.go.kr/행정규칙/제연설비의화재안전기술기준(NFTC501)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000247562&type=XML"
+  },
+  "연결송수관설비의 화재안전성능기준(NFPC 502)": {
+    "dir": "nfpc_502",
+    "as_of": "2024-07-01",
+    "source_url": "https://www.law.go.kr/행정규칙/연결송수관설비의화재안전성능기준(NFPC502)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000240188&type=XML"
+  },
+  "연결송수관설비의 화재안전기술기준(NFTC 502)": {
+    "dir": "nftc_502",
+    "as_of": "2026-07-01",
+    "source_url": "https://www.law.go.kr/행정규칙/연결송수관설비의화재안전기술기준(NFTC502)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000281812&type=XML"
+  },
+  "연결살수설비의 화재안전성능기준(NFPC 503)": {
+    "dir": "nfpc_503",
+    "as_of": "2026-05-04",
+    "source_url": "https://www.law.go.kr/행정규칙/연결살수설비의화재안전성능기준(NFPC503)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000278594&type=XML"
+  },
+  "연결살수설비의 화재안전기술기준(NFTC 503)": {
+    "dir": "nftc_503",
+    "as_of": "2024-07-01",
+    "source_url": "https://www.law.go.kr/행정규칙/연결살수설비의화재안전기술기준(NFTC503)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000243428&type=XML"
+  },
+  "비상콘센트설비의 화재안전성능기준(NFPC 504)": {
+    "dir": "nfpc_504",
+    "as_of": "2026-05-04",
+    "source_url": "https://www.law.go.kr/행정규칙/비상콘센트설비의화재안전성능기준(NFPC504)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000278588&type=XML"
+  },
+  "비상콘센트설비의 화재안전기술기준(NFTC 504)": {
+    "dir": "nftc_504",
+    "as_of": "2024-01-01",
+    "source_url": "https://www.law.go.kr/행정규칙/비상콘센트설비의화재안전기술기준(NFTC504)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000233392&type=XML"
+  },
+  "무선통신보조설비의 화재안전성능기준(NFPC 505)": {
+    "dir": "nfpc_505",
+    "as_of": "2026-05-04",
+    "source_url": "https://www.law.go.kr/행정규칙/무선통신보조설비의화재안전성능기준(NFPC505)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000278542&type=XML"
+  },
+  "무선통신보조설비의 화재안전기술기준(NFTC 505)": {
+    "dir": "nftc_505",
+    "as_of": "2022-12-01",
+    "source_url": "https://www.law.go.kr/행정규칙/무선통신보조설비의화재안전기술기준(NFTC505)",
+    "fetched_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000216276&type=XML"
+  }
+}
