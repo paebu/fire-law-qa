@@ -113,7 +113,8 @@ def admrul_to_text(root) -> str:
     out = []
     for c in root.iter("조문내용"):
         for line in (c.text or "").splitlines():
-            line = re.sub(r"<img[^>]*id=\"?(\d+)\"?[^>]*>", r"[이미지 \1]", line).strip()
+            line = re.sub(r"<img[^>]*id=\"?(\d+)\"?[^>]*>", r"[이미지 \1]", line)
+            line = line.replace("</img>", "").strip()
             if line:
                 out.append(line)
     return "\n".join(out) + "\n"
@@ -192,7 +193,18 @@ def search_cache(word):
     return _cache[word]
 
 
+def regen():
+    """이미 받은 source.xml 에서 text.txt 만 다시 만든다(네트워크 사용 안 함)."""
+    for d in sorted(RAW.iterdir()):
+        if (d / "source.xml").exists():
+            root = ET.parse(d / "source.xml").getroot()
+            text = law_to_text(root) if root.tag == "법령" else admrul_to_text(root)
+            (d / "text.txt").write_text(text, encoding="utf-8")
+
+
 def main():
+    if sys.argv[1:] == ["--regen"]:
+        return regen()
     only = set(sys.argv[1:])
     index_path = RAW / "index.json"
     index = json.loads(index_path.read_text(encoding="utf-8")) if index_path.exists() else {}
