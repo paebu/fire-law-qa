@@ -29,13 +29,46 @@ MOK = "가나다라마바사아자차카타파하"
 
 INDEX = json.loads((RAW / "index.json").read_text(encoding="utf-8"))
 _text_cache = {}
+TABLE_PREFIX = "\u2063"  # 판독문 줄 표지(보이지 않는 문자). quote 비교 전에 떼어 낸다
+
+
+def load_tables(d):
+    """raw/<폴더>/tables.txt -> {이미지 id: [판독문 줄]} (raw/TABLES.md 참고)"""
+    p = d / "tables.txt"
+    blocks, cur = {}, None
+    if p.exists():
+        for ln in p.read_text(encoding="utf-8").split("\n"):
+            if ln.startswith("@@이미지 "):
+                cur = blocks.setdefault(ln.split()[1], [])
+            elif cur is not None and ln.strip():
+                cur.append(ln.rstrip())
+    return blocks
 
 
 def law_lines(law):
+    """본문 줄 목록. [이미지 N] 줄 다음에 표 판독문 줄(표지 붙임)을 끼워 넣는다."""
     if law not in _text_cache:
         d = RAW / INDEX[law]["dir"]
-        _text_cache[law] = (d / "text.txt").read_text(encoding="utf-8").split("\n")
+        tables = load_tables(d)
+        out = []
+        for ln in (d / "text.txt").read_text(encoding="utf-8").split("\n"):
+            out.append(ln)
+            m = re.fullmatch(r"\[이미지 (\d+)\]", ln.strip())
+            if m and m.group(1) in tables:
+                out += [TABLE_PREFIX + t for t in tables[m.group(1)]]
+        _text_cache[law] = out
     return _text_cache[law]
+
+
+def plain(lines):
+    return "\n".join(ln.lstrip(TABLE_PREFIX) for ln in lines)
+
+
+def body_only(lines):
+    return "\n".join(ln for ln in lines if not ln.startswith(TABLE_PREFIX))
+
+
+TABLE_QUOTES = []  # (위치, 법령, quote) : 표 판독문에서만 찾은 인용
 
 
 def is_nftc(law):
@@ -172,7 +205,7 @@ def check_answer(a, where, errors, full):
         errors.append(f"{where}: quote 길이 {len(quote)}자 (20~80자): {quote}")
     if "\n" in quote:
         errors.append(f"{where}: quote 에 줄바꿈 포함")
-    whole = "\n".join(law_lines(law))
+    whole = plain(law_lines(law))
     if quote not in whole:
         errors.append(f"{where}: 원문에 없는 quote [{law}] {quote}")
         return
@@ -180,8 +213,10 @@ def check_answer(a, where, errors, full):
     if err:
         errors.append(f"{where}: [{law}] {err}")
         return
-    if quote not in "\n".join(sec):
+    if quote not in plain(sec):
         errors.append(f"{where}: quote 가 [{law}] {a['article']} 범위 밖에 있음: {quote}")
+    elif quote not in body_only(law_lines(law)):
+        TABLE_QUOTES.append((where, law, quote))
     if full:
         exp = expected_url(law, a["article"])
         if a.get("source_url") != exp:
@@ -264,9 +299,11 @@ def main(argv):
 def report(errors, warnings, n):
     for w in warnings:
         print("WARN ", w)
+    for where, law, quote in TABLE_QUOTES:
+        print("TABLE", f"{where}: 표 판독문 인용 [{law}] {quote}")
     for e in errors:
         print("FAIL ", e)
-    print(f"\n문항 {n}개, 오류 {len(errors)}건, 경고 {len(warnings)}건")
+    print(f"\n문항 {n}개, 오류 {len(errors)}건, 경고 {len(warnings)}건, 표 판독 인용 {len(TABLE_QUOTES)}건")
     sys.exit(1 if errors else 0)
 
 
