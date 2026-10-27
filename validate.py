@@ -79,10 +79,11 @@ def narrow_hang_ho(sec, hang, ho, ho_br, mok, where):
             return None, f"{where}: 제{hang}항을 찾을 수 없음"
     if ho:
         lab = f"{ho}의{ho_br}." if ho_br else f"{ho}."
-        idx = [i for i, ln in enumerate(sec) if ln.lstrip().startswith(lab + " ") or ln.lstrip() == lab]
+        # "1.철망모르타르" 처럼 번호 뒤에 공백이 없는 원문도 있다
+        idx = [i for i, ln in enumerate(sec) if re.match(rf"^\s*{re.escape(lab)}(?!\d)", ln)]
         if not idx:
             return None, f"{where}: 제{ho}호를 찾을 수 없음"
-        sec = slice_until(sec, idx[0], lambda ln: re.match(r"^\s*\d+(?:의\d+)?\.\s", ln) is not None
+        sec = slice_until(sec, idx[0], lambda ln: re.match(r"^\s*\d+(?:의\d+)?\.(?!\d)", ln) is not None
                           or ln.lstrip()[:1] in CIRCLED)
     if mok:
         idx = [i for i, ln in enumerate(sec) if ln.lstrip().startswith(mok + ". ")]
